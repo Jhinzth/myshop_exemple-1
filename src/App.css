@@ -36,3 +36,78 @@
     transform: rotate(360deg);
   }
 }
+/* General Navbar Styles */
+.navbar {
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  padding: 1rem;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff; /* White text color */
+}
+
+.navbar-nav .nav-item {
+  margin-left: 1rem;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #f1c40f !important; /* Soft yellow on hover */
+}
+
+/* Soft Yellow Navbar Background */
+.bg-warning {
+  background-color: #f8c700 !important; /* Soft yellow */
+}
+
+.bg-gradient {
+  background: linear-gradient(90deg, rgba(248, 199, 0, 1) 0%, rgba(253, 253, 150, 1) 100%); /* Gradient from soft yellow to light cream */
+}
+
+/* Badge Styling for Cart Count */
+.badge.bg-warning {
+  background-color: #f1c40f; /* Soft yellow badge */
+  color: #333; /* Dark text for visibility */
+}
+
+/* Button Customization */
+.btn-custom {
+  background-color: #f8c700; /* Soft yellow background */
+  color: #fff;
+  border-radius: 20px;
+  padding: 0.5rem 1.5rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-custom:hover {
+  background-color: #f1c40f; /* Darker yellow on hover */
+  transform: scale(1.05);
+}
+
+/* Adjust for mobile view */
+@media (max-width: 768px) {
+  .navbar-brand {
+      font-size: 1.5rem; /* Smaller logo text on mobile */
+  }
+
+  .navbar-nav .nav-item {
+      margin-left: 0.5rem; /* Less space between items on mobile */
+  }
+
+  .nav-link {
+      font-size: 1rem; /* Slightly smaller font size for mobile */
+  }
+
+  .navbar-toggler-icon {
+      width: 30px;
+      height: 20px;
+  }
+}
